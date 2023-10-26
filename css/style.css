@@ -715,8 +715,8 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
-  -ms-grid-columns: 1fr minmax(18.125rem, 32.25rem);
-  grid-template-columns: 1fr minmax(18.125rem, 32.25rem);
+  -ms-grid-columns: 1fr 32.25rem;
+  grid-template-columns: 1fr 32.25rem;
   padding: 1.5rem;
   background-color: #4ac9ff;
   border-radius: 1.5rem;
@@ -1864,14 +1864,6 @@ textarea.input {
 }
 
 @media (min-width: 91.625em) {
-  .call-button {
-    padding-right: 5.0625rem;
-  }
-
-  .call-button {
-    padding-left: 5.0625rem;
-  }
-
   .header-block__title {
     font-size: 3.25rem;
   }
@@ -2128,14 +2120,6 @@ textarea.input {
 }
 
 @media (max-width: 20em) {
-  .call-button {
-    padding-right: 3.125rem;
-  }
-
-  .call-button {
-    padding-left: 3.125rem;
-  }
-
   .header-block__title {
     font-size: 2rem;
   }
@@ -2413,12 +2397,14 @@ textarea.input {
   }
 }
 
-@media (max-width: 62.5em) {
+@media (max-width: 68.75em) {
   .subscribe {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 62.5em) {
   .services__items {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
@@ -2702,30 +2688,6 @@ textarea.input {
 }
 
 @media (min-width: 20em) and (max-width: 91.625em) {
-@supports (padding-right: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem )) {
-    .call-button {
-      padding-right: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem );
-    }
-}
-
-@supports not (padding-right: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem )) {
-    .call-button {
-      padding-right: calc(3.125rem + 1.9375 * (100vw - 20rem) / 71.625);
-    }
-}
-
-@supports (padding-left: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem )) {
-    .call-button {
-      padding-left: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem );
-    }
-}
-
-@supports not (padding-left: clamp( 3.125rem , 2.5839877836rem  +  2.705061082vw , 5.0625rem )) {
-    .call-button {
-      padding-left: calc(3.125rem + 1.9375 * (100vw - 20rem) / 71.625);
-    }
-}
-
 @supports (font-size: clamp( 2rem , 1.6509598604rem  +  1.7452006981vw , 3.25rem )) {
     .header-block__title {
       font-size: clamp( 2rem , 1.6509598604rem  +  1.7452006981vw , 3.25rem );
